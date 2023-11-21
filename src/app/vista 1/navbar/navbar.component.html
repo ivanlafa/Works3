@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="nav-left-sections">
+    <img src="../../../../assets/Logo.svg" alt="Logo" />
+
+    <ul class="ul-container">
+      <li class="list-item-navbar"><a href="#">First Link</a></li>
+      <li class="list-item-navbar"><a href="2vista">Second Link</a></li>
+      <li class="list-item-navbar"><a href="#">Third Link</a></li>
+      <li class="list-item-navbar"><a href="#">Fourth Link</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right-sections">
+    <ul class="ul-container">
+      <li class="list-item-navbar"><a href="#">Fifth Link</a></li>
+      <li class="list-item-navbar">
+        <button class="btn-navbar" (click)="toggleButtonClick()">
+          Button prueba
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--! Agrega una sección de contenido que se muestra cuando el botón es clickeado -->
+<div *ngIf="isButtonClicked" class="additional-content">
+  <h1>Additional Content</h1>
+</div>
